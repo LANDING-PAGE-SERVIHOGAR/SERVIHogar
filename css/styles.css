@@ -359,7 +359,7 @@ section[id], footer[id] { scroll-margin-top: 60px; }
 
 /* ============================================================
    TRABAJA CON NOSOTROS – Desktop-4
-   Fondo verde claro, texto grande izquierda + foto derecha
+ 
 ============================================================ */
 .cta-work {
   background: var(--green-cta);
@@ -447,7 +447,7 @@ section[id], footer[id] { scroll-margin-top: 60px; }
 
 /* ============================================================
    MODAL LOGIN – Desktop-5
-   Panel verde izquierdo + formulario blanco derecho
+   
 ============================================================ */
 .login-modal {
   background: var(--white); border-radius: 16px;
@@ -599,10 +599,6 @@ section[id], footer[id] { scroll-margin-top: 60px; }
 }
 .toast.show { transform: translateY(0); opacity: 1; }
 
-/* ============================================================
-   IMÁGENES REALES – clases listas para reemplazar SVGs
-   Uso: <img src="img/maria.jpg" class="pro-photo-real" alt="...">
-============================================================ */
 .pro-photo-real {
   width: 100%; height: 150px;
   object-fit: cover; object-position: top center;
@@ -635,19 +631,19 @@ section[id], footer[id] { scroll-margin-top: 60px; }
    RESPONSIVE – Tablet pequeña 860px
 ============================================================ */
 @media (max-width: 860px) {
-  /* Hero: apila vertical */
+
   .hero-inner       { grid-template-columns: 1fr; }
   .hero-text        { padding: 2.5rem 1.5rem; text-align: center; }
   .hero-text .btn-green { align-self: center; }
   .hero-photo       { min-height: 220px; }
   .hero-img-wrap    { width: 180px; }
 
-  /* Cta trabaja: solo texto */
+
   .cta-work-inner   { grid-template-columns: 1fr; }
   .cta-work-text    { padding: 2.5rem 1.5rem; text-align: center; align-items: center; }
   .cta-work-photo   { display: none; }
 
-  /* Cómo funciona: 2 columnas */
+
   .how-grid         { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -848,10 +844,10 @@ section[id], footer[id] { scroll-margin-top: 60px; }
 }
 
 /* ============================================================
-   MEJORAS DINÁMICAS – animaciones, stats, slider
+   MEJORAS DINÁMICA
 ============================================================ */
 
-/* Navbar scrolled */
+
 .navbar.scrolled {
   box-shadow: 0 4px 20px rgba(0,0,0,.13);
 }
@@ -1039,7 +1035,7 @@ section[id], footer[id] { scroll-margin-top: 60px; }
   transform: scale(1.3);
 }
 
-/* Cita destacada debajo del slider */
+
 .reviews-highlight {
   text-align: center;
   margin-top: 2.5rem;
