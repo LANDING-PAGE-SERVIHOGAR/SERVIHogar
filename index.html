@@ -29,7 +29,11 @@
       <input type="text" placeholder="Buscar servicio..." class="nav-search" id="nav-search" />
       <button class="btn-sesion" id="btn-login">Iniciar sesión</button>
     </div>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
 
@@ -558,9 +562,7 @@
   </div>
 </div>
 
-<!-- ============================================================
-     MODAL REGISTRO
-============================================================ -->
+
 <div class="modal-overlay" id="modal-register">
   <div class="small-modal">
     <button class="modal-close" id="close-register">✕</button>
@@ -590,9 +592,7 @@
   </div>
 </div>
 
-<!-- ============================================================
-     MODAL PERFIL PROFESIONAL
-============================================================ -->
+
 <div class="modal-overlay" id="modal-profile">
   <div class="small-modal small-modal--wide">
     <button class="modal-close" id="close-profile">✕</button>
@@ -618,7 +618,6 @@
   </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"><span id="toast-msg">¡Listo!</span></div>
 
 <script src="js/main.js"></script>
@@ -647,17 +646,13 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.forEach(link => link.classList.remove('active'));
         current.classList.add('active');
     }
-
-    // === CLIC EN LOS ENLACES ===
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();   // ← importante
+            e.preventDefault();   
 
-            // Quitar active a todos
             navLinks.forEach(l => l.classList.remove('active'));
             this.classList.add('active');
 
-            // Scroll suave a la sección
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
 
@@ -667,7 +662,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     block: "start"
                 });
 
-                // Forzar active después del scroll (soluciona el doble click)
                 setTimeout(() => {
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
@@ -676,10 +670,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Actualizar con scroll
     window.addEventListener('scroll', setActiveLink);
 
-    // Al cargar
     setActiveLink();
 });
 </script>
