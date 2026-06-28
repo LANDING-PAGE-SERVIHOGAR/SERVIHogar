@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SERVIHogar – Encuentra servicios confiables cerca de ti</title>
+  <title>SERVIHogar – Trabajadores verificados para tu hogar</title>
+  <meta name="description" content="Encuentra profesionales verificados para servicios del hogar en Lima. Contrata con confianza y seguridad en SERVIHogar." />
+  <meta property="og:title" content="SERVIHogar – Trabajadores verificados para tu hogar" />
+  <meta property="og:description" content="Conectamos familias con profesionales confiables. Perfiles verificados, reseñas reales y pagos protegidos." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="public/assets/images/logo.png" />
+  <link rel="shortcut icon" href="public/assets/images/logo.png" />
   <link rel="stylesheet" href="public/assets/styles/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
@@ -38,18 +44,60 @@
 </header>
 
 <!-- ============================================================
-     DESKTOP-1: HERO
+     DESKTOP-1: HERO (rediseñado con énfasis en confianza)
 ============================================================ -->
 <section class="hero" id="inicio">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1>Encuentra servicios confiables cerca de ti</h1><br>
-      <p>Conecta con profesionales independientes y contrata de manera rápida y segura.</p><br>
-      <button class="btn-green" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Buscar ahora</button>
+      <div class="hero-badge-strip">
+        <span class="hero-badge-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          Perfiles verificados
+        </span>
+        <span class="hero-badge-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f4b400" stroke="#f4b400" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          4.8 calificación promedio
+        </span>
+      </div>
+      <h1>Encuentra servicios <span class="text-accent">confiables</span> cerca de ti</h1>
+      <p class="hero-subtitle">Conecta con profesionales independientes y contrata de manera rápida y segura.</p>
+      <div class="hero-cta-group">
+        <button class="btn-green btn-hero-primary" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Buscar trabajador</button>
+        <button class="btn-hero-secondary" onclick="openRegister()">Quiero trabajar</button>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric">
+          <strong>1,200+</strong>
+          <span>Profesionales</span>
+        </div>
+        <div class="hero-metric-divider"></div>
+        <div class="hero-metric">
+          <strong>8,500+</strong>
+          <span>Servicios</span>
+        </div>
+        <div class="hero-metric-divider"></div>
+        <div class="hero-metric">
+          <strong>97%</strong>
+          <span>Satisfacción</span>
+        </div>
+      </div>
     </div>
     <div class="hero-photo">
-      <div class="hero-blob"></div>
-      <img src="public/assets/images/hero.jpg" alt="Profesional de limpieza" class="hero-photo-real">
+      <div class="hero-img-frame">
+        <div class="hero-blob"></div>
+        <img src="public/assets/images/hero.jpg" alt="Profesional de limpieza" class="hero-photo-real">
+        <div class="hero-float-card hero-float-card--1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <div>
+            <strong>Verificado</strong>
+            <span>Identidad confirmada</span>
+          </div>
+        </div>
+        <div class="hero-float-card hero-float-card--2">
+          <span class="float-stars">★★★★★</span>
+          <span>4.9 · 96 reseñas</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -79,8 +127,58 @@
 </section>
 
 <!-- ============================================================
+     POR QUÉ CONFIAR – Tarjetas de beneficios
+=========================================================== -->
+<section class="trust-features">
+  <div class="section-container">
+    <h2 class="section-title-center reveal">¿Por qué confiar en SERVIHogar?</h2>
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        </div>
+        <h3>Perfiles verificados</h3>
+        <p>Cada profesional pasa por un proceso de verificación de identidad y antecedentes antes de publicar su perfil.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-1">
+        <div class="trust-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3>Reseñas reales</h3>
+        <p>Calificaciones y comentarios verificados de clientes reales para que elijas con total transparencia.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-2">
+        <div class="trust-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3>Pagos protegidos</h3>
+        <p>Realiza tus pagos con total tranquilidad a través de nuestra plataforma segura. Sin sorpresas.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-3">
+        <div class="trust-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <h3>Garantía incluida</h3>
+        <p>Si no quedas satisfecho con el servicio, intervendremos para resolverlo. Tu tranquilidad es lo primero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      PROFESIONALES DESTACADOS
-============================================================ -->
+=========================================================== -->
 <section class="professionals" id="profesionales">
   <div class="section-container">
     <h2 class="section-title-left reveal">Profesionales destacados</h2>
@@ -92,7 +190,7 @@
       <div class="pros-track">
 
         <div class="pro-card" data-name="maria lopez" data-cat="limpieza">
-          <img src="public/assets/images/maria.jpg" alt="Maria Lopez" class="pro-photo-real">
+          <img src="public/assets/images/maria.jpg" alt="Maria Lopez" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Maria Lopez</strong>
             <span class="pro-category">Limpieza</span>
@@ -103,7 +201,7 @@
         </div>
 
         <div class="pro-card" data-name="jorge ramos" data-cat="electricista">
-          <img src="public/assets/images/jorge.jpg" alt="Jorge Ramos" class="pro-photo-real">
+          <img src="public/assets/images/jorge.jpg" alt="Jorge Ramos" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Jorge Ramos</strong>
             <span class="pro-category">Electricista</span>
@@ -114,7 +212,7 @@
         </div>
 
         <div class="pro-card" data-name="jose garabay" data-cat="jardinería">
-          <img src="public/assets/images/jose.jpg" alt="Jose Garabay" class="pro-photo-real">
+          <img src="public/assets/images/jose.jpg" alt="Jose Garabay" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Jose Garabay</strong>
             <span class="pro-category">Jardinería</span>
@@ -125,7 +223,7 @@
         </div>
 
         <div class="pro-card" data-name="elena casas" data-cat="cocina">
-          <img src="public/assets/images/elena.jpg" alt="Elena Casas" class="pro-photo-real">
+          <img src="public/assets/images/elena.jpg" alt="Elena Casas" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Elena Casas</strong>
             <span class="pro-category">Cocina</span>
@@ -136,7 +234,7 @@
         </div>
 
         <div class="pro-card" data-name="carlos mendez" data-cat="gasfitería">
-          <img src="public/assets/images/carlos.jpg" alt="Carlos Mendez" class="pro-photo-real">
+          <img src="public/assets/images/carlos.jpg" alt="Carlos Mendez" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Carlos Mendez</strong>
             <span class="pro-category">Gasfitería</span>
@@ -147,7 +245,7 @@
         </div>
 
         <div class="pro-card" data-name="rosa fernandez" data-cat="pintura">
-          <img src="public/assets/images/elias.jpg" alt="Rosa Fernandez" class="pro-photo-real">
+          <img src="public/assets/images/elias.jpg" alt="Rosa Fernandez" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Elias Fernandez</strong>
             <span class="pro-category">Pintura</span>
@@ -158,7 +256,7 @@
         </div>
 
         <div class="pro-card" data-name="lucas herrera" data-cat="limpieza">
-          <img src="public/assets/images/lucas.webp" alt="Lucas Herrera" class="pro-photo-real">
+          <img src="public/assets/images/lucas.webp" alt="Lucas Herrera" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Lucas Herrera</strong>
             <span class="pro-category">Limpieza</span>
@@ -169,7 +267,7 @@
         </div>
 
         <div class="pro-card" data-name="andrea quispe" data-cat="cocina">
-          <img src="public/assets/images/andrea.png" alt="Andrea Quispe" class="pro-photo-real">
+          <img src="public/assets/images/andrea.png" alt="Andrea Quispe" class="pro-photo-real" loading="lazy">
           <div class="pro-details">
             <strong>Andrea Quispe</strong>
             <span class="pro-category">Cocina</span>
@@ -197,7 +295,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/limpieza.png" alt="Limpieza" class="service-image">
+          <img src="public/assets/images/limpieza.png" alt="Limpieza" class="service-image" loading="lazy">
         </div>
         <h3>Limpieza</h3>
         <button class="btn-green btn-sm" onclick="filterService('Limpieza')">Ver más</button>
@@ -205,7 +303,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/cocina.jpg" alt="Cocina" class="service-image">
+          <img src="public/assets/images/cocina.jpg" alt="Cocina" class="service-image" loading="lazy">
         </div>
         <h3>Cocina</h3>
         <button class="btn-green btn-sm" onclick="filterService('Cocina')">Ver más</button>
@@ -213,7 +311,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/jardineria.jpg" alt="Jardineria" class="service-image">
+          <img src="public/assets/images/jardineria.jpg" alt="Jardineria" class="service-image" loading="lazy">
         </div>
         <h3>Jardinería</h3>
         <button class="btn-green btn-sm" onclick="filterService('Jardinería')">Ver más</button>
@@ -221,7 +319,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/gasfiteria.png" alt="Gasfiteria" class="service-image">
+          <img src="public/assets/images/gasfiteria.png" alt="Gasfiteria" class="service-image" loading="lazy">
         </div>
         <h3>Gasfitería</h3>
         <button class="btn-green btn-sm" onclick="filterService('Gasfitería')">Ver más</button>
@@ -229,7 +327,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/electricista.png" alt="Electricista" class="service-image">
+          <img src="public/assets/images/electricista.png" alt="Electricista" class="service-image" loading="lazy">
         </div>
         <h3>Electricista</h3>
         <button class="btn-green btn-sm" onclick="filterService('Electricista')">Ver más</button>
@@ -237,7 +335,7 @@
 
       <div class="svc-card reveal">
         <div class="svc-img">
-          <img src="public/assets/images/pintura.png" alt="Pintura de interiores" class="service-image">
+          <img src="public/assets/images/pintura.png" alt="Pintura de interiores" class="service-image" loading="lazy">
         </div>
         <h3>Pintura de Interiores</h3>
         <button class="btn-green btn-sm" onclick="filterService('Pintura')">Ver más</button>
@@ -309,17 +407,35 @@
 </section>
 
 <!-- ============================================================
+     REGISTRA TU NEGOCIO – CTA para empresas
+=========================================================== -->
+<section class="cta-business">
+  <div class="section-container">
+    <div class="cta-business-box reveal">
+      <div class="cta-business-text">
+        <h2>¿Tienes un negocio de servicios?</h2>
+        <p>Registra tu empresa en SERVIHogar y llega a miles de clientes que buscan profesionales confiables. Aumenta tus ingresos con cada servicio.</p>
+      </div>
+      <button class="btn-green btn-business" onclick="openRegister()">Registrar negocio</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      TRABAJA CON NOSOTROS
-============================================================ -->
+=========================================================== -->
 <section class="cta-work" id="trabaja">
   <div class="cta-work-inner">
     <div class="cta-work-text reveal">
       <h2>¿BUSCAS NUEVAS<br>OPORTUNIDADES<br>DE TRABAJO?</h2>
       <p><strong>Ofrece tus servicios y conecta con<br>clientes de manera rápida y segura.</strong></p>
-      <button class="btn-green btn-postula" onclick="openRegister()">Postula Ahora</button>
+      <div class="cta-work-btns">
+        <button class="btn-green btn-postula" onclick="openRegister()">Postula ahora</button>
+        <button class="btn-work-secondary" onclick="openRegister()">Registrar negocio</button>
+      </div>
     </div>
     <div class="cta-work-photo reveal reveal-delay-2">
-      <img src="public/assets/images/equipo.webp" alt="Equipo de trabajadores"
+      <img src="public/assets/images/equipo.webp" alt="Equipo de trabajadores" loading="lazy"
       style="width:100%;max-width:420px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.2);position:relative;z-index:1">
     </div>
   </div>
